@@ -60,9 +60,9 @@
       pageContext.setAttribute("user", user);
 
 %>
-<h1 align="center">Nature Blog</h1>
+<h1 align="center" style="font-size: 250%;" style="font-family: courier">Nature Blog</h1>
 
-<p>Hello, ${fn:escapeXml(user.nickname)}! (You can
+<p style="text-align: right;">Hello, ${fn:escapeXml(user.nickname)}! (You can
 
 <a href="<%= userService.createLogoutURL(request.getRequestURI()) %>">sign out</a>.)</p>
 
@@ -72,11 +72,11 @@
 
 %>
 
-<p>Hello!
+<p style="text-align: right;">Hello!
 
 <a href="<%= userService.createLoginURL(request.getRequestURI()) %>">Sign in</a>
 
-to include your name with greetings you post.</p>
+to post blog entries.</p>
 
 <%
 
