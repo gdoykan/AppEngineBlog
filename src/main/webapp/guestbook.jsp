@@ -62,6 +62,8 @@
 %>
 <h1 align="center" style="font-size: 250%;" style="font-family: courier">Nature Blog</h1>
 
+<img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&h=350" align="center">
+
 <p style="text-align: right;">Hello, ${fn:escapeXml(user.nickname)}! (You can
 
 <a href="<%= userService.createLogoutURL(request.getRequestURI()) %>">sign out</a>.)</p>
@@ -77,6 +79,8 @@
 <a href="<%= userService.createLoginURL(request.getRequestURI()) %>">Sign in</a>
 
 to post blog entries.</p>
+
+<p style="padding: 2em"> Check out the most recent blog entries!</p>
 
 <%
 
